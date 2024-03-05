@@ -1,4 +1,4 @@
-"use stricr";
+"use strict";
 
 //while loops
 
@@ -55,12 +55,24 @@
 
 // do while loops
 
+
+// Practice exercise 5.2
+// let counter = 0;
+// let step = 20;
+// do {
+//  console.log(counter);
+//  counter += step;
+// }
+// while (counter <= 100);
+
 // counter = 0;
 // let step = 6;
 // do {
 //   console.log(counter);
 //   counter += step;
 // } while (counter <= 100);
+
+
 
 // for loops
 
@@ -94,6 +106,7 @@
 // }
 // console.log(myWork);
 
+
 //Nested loops
 
 // let arrOfArrays = [];
@@ -105,6 +118,7 @@
 // }
 // console.log(arrOfArrays);
 
+// Practice exercise 5.4
 // const myTable = [];
 // const rows = 4;
 // const cols = 7;
@@ -323,49 +337,69 @@
 
 // break, continue, and nested loops
 
-let groups = [
-    ["Martin", "Daniel", "Keith"],
-    ["Margot", "Marina", "Ali"],
-    ["Helen", "Jonah", "Sambikos"],
-   ];
+// let groups = [
+//     ["Martin", "Daniel", "Keith"],
+//     ["Margot", "Marina", "Ali"],
+//     ["Helen", "Jonah", "Sambikos"],
+//    ];
    
-   for (let i = 0; i < groups.length; i++) {
-    let matches = 0;
-   for (let j = 0; j < groups[i].length; j++) {
-    if(groups[i][j].startsWith("M")){
-    matches++;
-    } else {
-    continue;
-    }
-    if (matches === 2){
-    console.log("Found a group with two names starting with an M:");
-    console.log(groups[i]);
-    break;
-    }
-    }
-   }
+//    for (let i = 0; i < groups.length; i++) {
+//     let matches = 0;
+//    for (let j = 0; j < groups[i].length; j++) {
+//     if(groups[i][j].startsWith("M")){
+//     matches++;
+//     } else {
+//     continue;
+//     }
+//     if (matches === 2){
+//     console.log("Found a group with two names starting with an M:");
+//     console.log(groups[i]);
+//     break;
+//     }
+//     }
+//    }
 
 
-   for (let group of groups){
-    for (let member of group){
-    if (member.startsWith("M")){
-    console.log("found one starting with M:", member);
+   // for (let group of groups){
+   //  for (let member of group){
+   //  if (member.startsWith("M")){
+   //  console.log("found one starting with M:", member);
 
-   [ 113 ]
-    break;
-    }
-    }
-   }
+   // [ 113 ]
+   //  break;
+   //  }
+   //  }
+   // }
 
 //    break and continue and labeled blocks
 
-outer:
-for (let group of groups) {
- inner:
- for (let member of group) {
- if (member.startsWith("M")) {
- console.log("found one starting with M:", member);
- break outer;
- }
- }
-}
+// outer:
+// for (let group of groups) {
+//  inner:
+//  for (let member of group) {
+//  if (member.startsWith("M")) {
+//  console.log("found one starting with M:", member);
+//  break outer;
+//  }
+//  }
+// }
+
+
+
+// Project
+// Math multiplication table
+// const myTable = [];
+// const numm = 10;
+// for(let x=0; x<numm; x++){
+//  const temp = [];
+//  for(let y = 0; y<numm; y++){
+//  temp.push(x*y);
+//  }
+//  myTable.push(temp);
+// }
+// console.table(myTable);
+
+
+let language ="Python"
+let message = `lets learn ${language}`;
+console.log(message);

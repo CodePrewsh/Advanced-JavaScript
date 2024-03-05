@@ -29,7 +29,7 @@
 //         this.breed = breed;
 //     }
 // }
-//    let dog = new Dog("Jacky", 30, "brown", "labrador");
+//    let dog = new Dog("leo", 30, "brown", "labrador");
 // console.log(obj);
 
 // class Dog {
@@ -40,7 +40,7 @@
 //     this.breed = breed;
 //   }
 // }
-// let dog = new Dog("JavaScript", 2.4, "brown", "chihuahua");
+// let dog = new Dog("JavaScript", 2.4, "brown", "leo");
 // console.log(dog.dogName, "is a", dog.breed, "and weighs", dog.weight, "kg.");
 
 // // // Classes
@@ -54,7 +54,7 @@
 //     }
 //    }
 
-//    let p = new Person("Maaike", "van Putten");
+//    let p = new Person("precious", "van Putten");
 //    console.log("Hi", p.firstname);
 
 //    let p = new Person("Maaike");
@@ -70,7 +70,7 @@
 //     }
 //    }
 //    let person1 = new Person("Precious", "Bhembe");
-//    let person2 = new Person("Sky", "Dlamin");
+//    let person2 = new Person("Thandeka", "Bhembe");
 //    console.log("hello " + person1.firstname);
 //    console.log("hello " + person2.firstname);
 
@@ -112,13 +112,11 @@
 //     fullname(){
 //     return this.firstname + " " + this.lastname;
 //     }
-   
-//    let person1 = new Person("Thandeka", "Mavundla");
-//    let person2 = new Person("Paris", "Sky");
+//    }
+//    let person1 = new Person("Precious", "BHembe");
+//    let person2 = new Person("Thandeka", "Bhembe");
 //    console.log(person1.fullname());
 //    console.log(person2.fullname());
-
-//    Properties
 
 // class Person {
 //     constructor(firstname, lastname) {
@@ -249,8 +247,8 @@
 //     this.years = years;
 //   }
 // }
-// const person1 = new Employee("Laurence", "Svekis", 10);
-// const person2 = new Employee("Jane", "Doe", 5);
+// const person1 = new Employee("Sky", "bhembe", 10);
+// const person2 = new Employee("prewsh", "bhembe", 5);
 // const workers = [person1, person2];
 // Employee.prototype.details = function () {
 //   return (
@@ -263,16 +261,22 @@
 
 // //    Menu items price calculator
 // class Menu {
-//   #offer1 = 10;
-//   #offer2 = 20;
-//   constructor(val1, val2) {
+//     #offer1 = 10;
+//     #offer2 = 20;
+//     constructor(val1, val2) {
 //     this.val1 = val1;
 //     this.val2 = val2;
-//   }
-//   calTotal() {
-//     return this.val1 * this.#offer1 + this.val2 * this.#offer2;
-//   }
-//   get total() {
+//     }
+//     calTotal(){
+//     return (this.val1 * this.#offer1) + (this.val2 * this.#offer2);
+//     }
+//     get total(){
 //     return this.calTotal();
-//   }
-// }
+//     }
+//    }
+//    const val1 = new Menu(2,0);
+// const val2 = new Menu(1,3);
+// const val3 = new Menu(3,2);
+// console.log(val1.total);
+// console.log(val2.total);
+// console.log(val3.total);

@@ -13,22 +13,22 @@
 
 // //    Practice exercise 6.1
 
-//    function adder(a, b) {
-//     return a + b;
-//     }
-//     const val1 = 10;
-//     const val2 = 20;
-//     console.log(adder(val1, val2));
-//     console.log(adder(20, 30));
+  //  function adder(a, b) {
+  //   return a + b;
+  //   }
+  //   const val1 = 10;
+  //   const val2 = 20;
+  //   console.log(adder(val1, val2));
+  //   console.log(adder(20, 30));
 
 //     // Practice exercise 6.2
-//     const adj = ["super", "wonderful", "bad", "angry", "careful"];
-//     function myFun() {
-//      const question = prompt("What is your name?");
-//      const nameAdj = Math.floor(Math.random() * adj.length);
-//      console.log(adj[nameAdj] + " " + question );
-//     }
-//     myFun();
+    // const adj = ["super", "wonderful", "bad", "angry", "careful"];
+    // function myFun() {
+    //  const question = prompt("What is your name?");
+    //  const nameAdj = Math.floor(Math.random() * adj.length);
+    //  console.log(adj[nameAdj] + " " + question );
+    // }
+    // myFun();
 
 //  Practice exercise 6.3
 
@@ -95,10 +95,9 @@
 // }
 // console.log(resultsArr);
 
+
 // // Practice exercise 6.4
-
 // let emptyArray = [];
-
 // for(let i = 0; i < 10; i++) {
 //     let val1 = 5 * i;
 //     let val2 = i * i;
@@ -114,8 +113,8 @@
 //     }
 //    }
 
-//    Returning with arrow functions
 
+//    Returning with arrow functions
 // let addTwoNumbers = (x, y) => x + y;
 // let result = addTwoNumbers(12, 15);
 // console.log(result);
@@ -329,24 +328,39 @@
 //  doFlexibleStuff(functionVariable);
 
 
-let anotherFunctionVariable = function() {
-  console.log("Another anonymous function implementation.");
- }
- let youGotThis = function () {
-  console.log("You're doing really well, keep coding!");
- };
- setTimeout(youGotThis, 1000);
+// let anotherFunctionVariable = function() {
+//   console.log("Another anonymous function implementation.");
+//  }
+//  let youGotThis = function () {
+//   console.log("You're doing really well, keep coding!");
+//  };
+//  setTimeout(youGotThis, 1000);
 
 
 //  Chapter projects
 // Create a recursive function
 
-const main = function counter(i) {
-  console.log(i);
-  if (i < 10) {
-  return counter(i + 1);
-  }
-  return;
- }
- main(0);
+// const main = function counter(i) {
+//   console.log(i);
+//   if (i < 10) {
+//   return counter(i + 1);
+//   }
+//   return;
+//  }
+//  main(0);
 
+// Set timeout order
+
+// const one = ()=> console.log('one');
+// const two = ()=> console.log('two');
+// const three = () =>{
+//  console.log('three');
+//  one();
+//  two();
+// }
+// const four = () =>{
+//   console.log('four');
+//   setTimeout(one,0);
+//   three();
+//  }
+//  four();
