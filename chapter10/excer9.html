@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div>
+        <button>Mphile</button>
+        <button>Amanda</button>
+        <button>Rori</button>
+    </div>
+    <script>
+        const btns = document.querySelectorAll("button");
+        btns.forEach((btn)=>{
+            function output(){
+                console.log(this.textContent);
+            }
+            btn.addEventListener("click",output);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <title>Project 1</title>
+    <style>
+        .active {
+            display: block !important;
+        }
+        .myText {
+            display: none;
+        }
+        .title {
+            font-size: 1.5em;
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Precious</div>
+        <div class="myText">Th</div>
+        <div class="title">Prewsh</div>
+        <div class="myText">My nickname should be Prewsh/div>
+        <div class="title">Surname</div>
+        <div class="myText">Bhembe mavundla mgabh</div>
+    </div>
+    <script>
+        const menus = document.querySelectorAll(".title");
+        const openText = document.querySelectorAll(".myText");
+        menus.forEach((el) => {
+            el.addEventListener("click", (e) => {
+                console.log(el.nextElementSibling);
+                remover();
+                el.nextElementSibling.classList.toggle("active");
+            })
+        })
+        function remover() {
+            openText.forEach((ele) => {
+                ele.classList.remove("active");
+            })
+        }
+    </script>
+
+</body>
+</html>
