@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <h1>Concurrency</h1>
+  </head>
+  <body>
+    <script>
+      const myPromise = new Promise((resolve, reject) => {
+        resolve("Start Counting");
+      });
+      function counter(val) {
+        console.log(val);
+      }
+      myPromise
+        .then((value) => {
+          counter(value);
+          return "one";
+        })
+        .then((value) => {
+          counter(value);
+          return "two";
+        })
+        .then((value) => {
+          counter(value);
+          return "three";
+        })
+        .then((value) => {
+          counter(value);
+        });
+    </script>
+  </body>
+</html>

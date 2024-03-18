@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=script, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let cnt = 0;
+      function outputTime(val) {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            cnt++;
+            resolve(`x value ${val} counter:${cnt}`);
+          }, 1000);
+        });
+      }
+      async function aCall(val) {
+        console.log(`ready ${val} counter:${cnt}`);
+        const res = await outputTime(val);
+        console.log(res);
+      }
+      for (let x = 1; x < 4; x++) {
+        aCall(x);
+      }
+    </script>
+  </body>
+</html>
