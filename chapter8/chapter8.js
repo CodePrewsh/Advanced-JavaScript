@@ -131,13 +131,13 @@
 
 // Practice exercise 8.2
 
-// let arr = ["Lumka", "aphiwe", "thandi", "precious", "prewsh", "Sne",
-// "Mich", "Alphie", "Mike", "Okuhle", "Alice"];
-// let arr2 = arr.filter ( (value, index, array) => {
-//  console.log(value,index,array.indexOf(value));
-//  return array.indexOf(value) === index;
-// });
-// console.log(arr2);
+let arr = ["Lumka", "aphiwe", "thandi", "precious", "prewsh", "Sne",
+"Mich", "Alphie", "Mike", "Okuhle", "Alice"];
+let arr2 = arr.filter ( (value, index, array) => {
+ console.log(value,index,array.indexOf(value));
+ return array.indexOf(value) === index;
+});
+console.log(arr2);
 
 // // Practice exercise 8.3
 
